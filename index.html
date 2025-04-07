@@ -4,8 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+    <header>
+        <h1>Bikezone</h1>
+        <nav>
+          <a href="#productos">Productos</a>
+          <a href="#opiniones">Opiniones</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </header>
     
+      <section class="hero">
+        <div>
+          <h1>Tu próxima aventura comienza aquí</h1>
+          <p>Descubre las mejores bicicletas y accesorios para cada ruta</p>
+        </div>
+      </section>
+    
+      <section class="section" id="productos">
+        <h2>Nuestras Bicis Destacadas</h2>
+        <div class="products">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1594188450712-1f5b25db4f1e" alt="Bici montaña">
+            <h3>Bikezone MTB Pro</h3>
+            <p>Bicicleta de montaña con suspensión total y frenos hidráulicos.</p>
+          </div>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1581276879432-15d6020a01d5" alt="Bici carretera">
+            <h3>Bikezone RoadX</h3>
+            <p>Ligera, veloz y perfecta para recorrer largos kilómetros en carretera.</p>
+          </div>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1595520296461-e0e6f0f3c9e8" alt="Bici urbana">
+            <h3>Bikezone Urban Eco</h3>
+            <p>Ideal para la ciudad. Con estilo moderno y cuadro de aluminio.</p>
+          </div>
+        </div>
+      </section>
+    
+      <section class="section" id="opiniones">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonials">
+          <div class="card">
+            <p>"Compré una MTB y no podría estar más contento. Calidad y servicio 10/10."</p>
+            <strong>— Laura G.</strong>
+          </div>
+          <div class="card">
+            <p>"La mejor tienda de bicis que he probado. Recomendado 100%."</p>
+            <strong>— Pedro M.</strong>
+          </div>
+          <div class="card">
+            <p>"Envío rápido y excelente atención al cliente. Volveré a comprar seguro."</p>
+            <strong>— Andrea R.</strong>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes dudas? Escríbenos y te responderemos lo antes posible.</p>
+      
+        <form id="contactForm" >
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" minlength="3" required><br><br>
+      
+          <label for="email">Correo electrónico:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+      
+          <label for="asunto">Asunto:</label><br>
+          <input type="text" id="asunto" name="asunto" required><br><br>
+      
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+      
+          <button type="submit">Enviar</button>
+          <p id="formMsg" ></p>
+        </form>
+      </section>
+    
+      <section class="section" id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes dudas? Escríbenos a <strong>info@bikezone.com</strong> o visítanos en nuestra tienda física en Madrid.</p>
+      </section>
+    
+      <footer>
+        <p>&copy; 2025 Bikezone. Todos los derechos reservados.</p>
+      </footer>
 </body>
 </html>
